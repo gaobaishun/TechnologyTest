@@ -9,7 +9,7 @@ import java.rmi.RemoteException;
  * @Date 2020-03-29 17:02
  * imformation：
  */
-public interface ARemote extends Remote, Serializable {
+public interface ARemote extends Remote{
     void setA(A a) throws RemoteException;
     A getA()throws RemoteException;
 }

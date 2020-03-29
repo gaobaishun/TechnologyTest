@@ -21,6 +21,7 @@ public class Client {
             ARemote aRemoteImp=(ARemote) registry.lookup("atest");
             A a=aRemoteImp.getA();
             System.out.println(a.getName());
+            System.out.println(a.getB().getName());
         } catch (RemoteException | NotBoundException e) {
             e.printStackTrace();
         }

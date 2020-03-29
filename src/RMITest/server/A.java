@@ -9,6 +9,8 @@ import java.io.Serializable;
  */
 public class A implements Serializable{
     private String name;
+    //transient private B b=new B();
+    private B b=new B();
     public A(String name){
         this.name=name;
     }
@@ -16,4 +18,9 @@ public class A implements Serializable{
     public String getName() {
         return name;
     }
+
+    public B getB() {
+        return b;
+    }
+
 }

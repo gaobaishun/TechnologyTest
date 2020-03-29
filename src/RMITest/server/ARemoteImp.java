@@ -10,7 +10,7 @@ import java.rmi.server.UnicastRemoteObject;
  * imformation：
  */
 public class ARemoteImp extends UnicastRemoteObject implements ARemote {
-    private  A a;
+    transient private  A a;
     public ARemoteImp() throws RemoteException {
     }
 
